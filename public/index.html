@@ -19,7 +19,8 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <style>
-        *{box-sizing:border-box}
+        *{box-sizing:border-box;}
+        .fade-in-image { animation: fadeIn 5s; }
         .material-symbols-sharp{margin:12px 0 0 -10px;font-variation-settings:FILL 0,wght 100,GRAD 0,opsz 40}
         .nav{height:50px;width:100%;padding:0 20px;position:relative}
         .nav-header{display:inline}
@@ -99,21 +100,24 @@
         <!--  RECENT ARTICLE LIST -->
         <section>
             <ol>
-                <li class="row middle-xs center-xs ol-preview" role="article">
+                <li class="row middle-xs center-xs ol-preview image-container"
+                    role="article">
                     <picture class="col-xs-12
                             col-sm-8
                             col-md-6
-                            col-lg-6">
+                            col-lg-6"
+                            style="aspect-ratio: 5/6; width: 100%; object-fit: contain">
                         <source media="(min-width: 75em)"
-                            srcset="https://retratosdearissona.mo.cloudinary.net/img/Fall-of-a-Dreamer.jpg?tx=w_1400">
+                            data-srcset="https://retratosdearissona.mo.cloudinary.net/img/Fall-of-a-Dreamer.jpg?tx=w_1400">
                         <source media="(min-width: 64em)"
-                            srcset="https://retratosdearissona.mo.cloudinary.net/img/Fall-of-a-Dreamer.jpg?tx=w_1200">
+                            data-srcset="https://retratosdearissona.mo.cloudinary.net/img/Fall-of-a-Dreamer.jpg?tx=w_1200">
                         <source media="(min-width: 48em)"
-                            srcset="https://retratosdearissona.mo.cloudinary.net/img/Fall-of-a-Dreamer.jpg?tx=w_1000">
+                            data-srcset="https://retratosdearissona.mo.cloudinary.net/img/Fall-of-a-Dreamer.jpg?tx=w_1000">
                         <source media="(min-width: 34em)"
-                            srcset="https://retratosdearissona.mo.cloudinary.net/img/Fall-of-a-Dreamer.jpg?tx=w_720">
-                        <img src="https://retratosdearissona.mo.cloudinary.net/img/Fall-of-a-Dreamer.jpg"
-                            alt="All the dinosaurs!" class="u-max-full-width">
+                            data-srcset="https://retratosdearissona.mo.cloudinary.net/img/Fall-of-a-Dreamer.jpg?tx=w_720">
+                        <img data-src="https://retratosdearissona.mo.cloudinary.net/img/Fall-of-a-Dreamer.jpg"
+                            src="https://retratosdearissona.mo.cloudinary.net/img/Fall-of-a-Dreamer.jpg?tx=e_blur:800,q_1"
+                            alt="All the dinosaurs!" class="u-max-full-width lazy">
                     </picture>
 
                     <section class="col-xs-12
@@ -135,8 +139,8 @@
                 <li class="row middle-xs center-xs ol-preview" role="article">
                     <section class="col-xs-12
                         col-sm-12
-                        col-md-6
-                        col-lg-6">
+                        col-md-5
+                        col-lg-5">
                         <h2>
                             La Misión de San Xavier del Bac
                         </h2>
@@ -148,21 +152,24 @@
                         <br><button style="float:right;">Read More</button>
                     </section>
 
-                    <picture class="col-xs-12
-                            col-sm-8
-                            col-md-6
-                            col-lg-6 first-xs last-md">
-                        <source media="(min-width: 75em)"
-                            srcset="https://retratosdearissona.mo.cloudinary.net/img/La-Mision-de-San-Xavier-del-Bac.jpg?tx=w_1400">
-                        <source media="(min-width: 64em)"
-                            srcset="https://retratosdearissona.mo.cloudinary.net/img/La-Mision-de-San-Xavier-del-Bac.jpg?tx=w_1200">
-                        <source media="(min-width: 48em)"
-                            srcset="https://retratosdearissona.mo.cloudinary.net/img/La-Mision-de-San-Xavier-del-Bac.jpg?tx=w_1000">
-                        <source media="(min-width: 34em)"
-                            srcset="https://retratosdearissona.mo.cloudinary.net/img/La-Mision-de-San-Xavier-del-Bac.jpg?tx=w_720">
-                        <img src="https://retratosdearissona.mo.cloudinary.net/img/La-Mision-de-San-Xavier-del-Bac.jpg"
-                            alt="All the dinosaurs!" class="u-max-full-width">
-                    </picture>
+                    <div class="col-xs-12
+                        col-sm-8
+                        col-md-7
+                        col-lg-7 first-xs last-md"> <!-- NOTE: Use 12 8 7 7 for landscape & 12 8 6 6 for Portrait -->
+                        <picture style="aspect-ratio: 5/6; width: 100%; object-fit: contain">
+                            <source media="(min-width: 75em)"
+                                data-srcset="https://retratosdearissona.mo.cloudinary.net/img/La-Mision-de-San-Xavier-del-Bac.jpg?tx=w_1400">
+                            <source media="(min-width: 64em)"
+                                data-srcset="https://retratosdearissona.mo.cloudinary.net/img/La-Mision-de-San-Xavier-del-Bac.jpg?tx=w_1200">
+                            <source media="(min-width: 48em)"
+                             data-srcset="https://retratosdearissona.mo.cloudinary.net/img/La-Mision-de-San-Xavier-del-Bac.jpg?tx=w_1000">
+                            <source media="(min-width: 34em)"
+                                data-srcset="https://retratosdearissona.mo.cloudinary.net/img/La-Mision-de-San-Xavier-del-Bac.jpg?tx=w_720">
+                            <img data-srcset="https://retratosdearissona.mo.cloudinary.net/img/La-Mision-de-San-Xavier-del-Bac.jpg?tx=q_1"
+                                alt="All the dinosaurs!" class="u-max-full-width lazy">
+                        </picture>
+
+                    </div>
 
                 </li>
 
@@ -177,7 +184,15 @@
         <p class="col-xs-12">All Rights Reserved</p>
 
     </footer>
-    <script src=https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.5.0/dist/lazyload.min.js></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.2/dist/lazyload.min.js"></script>
+
+    <script>
+        var lazyLoadInstance = new LazyLoad({
+            // Your custom settings go here
+        });
+    </script>
+
     <script type="module">
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js";
