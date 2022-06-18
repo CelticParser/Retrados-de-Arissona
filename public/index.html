@@ -57,6 +57,8 @@
     <meta property="og:url" content="">
     <meta property="og:image" content="">
 
+    <link rel=manifest href=/manifest.json>
+
 </head>
 
 <body>
@@ -100,7 +102,7 @@
         <!--  RECENT ARTICLE LIST -->
         <section>
             <ol>
-                <li class="row middle-xs center-xs ol-preview image-container"
+                <li class="row middle-xs center-xs ol-preview"
                     role="article">
                     <picture class="col-xs-12
                             col-sm-8
@@ -136,7 +138,8 @@
                     </section>
                 </li>
 
-                <li class="row middle-xs center-xs ol-preview" role="article">
+                <li class="row middle-xs center-xs ol-preview" 
+                    role="article">
                     <section class="col-xs-12
                         col-sm-12
                         col-md-5
@@ -165,7 +168,7 @@
                              data-srcset="https://retratosdearissona.mo.cloudinary.net/img/La-Mision-de-San-Xavier-del-Bac.jpg?tx=w_1000">
                             <source media="(min-width: 34em)"
                                 data-srcset="https://retratosdearissona.mo.cloudinary.net/img/La-Mision-de-San-Xavier-del-Bac.jpg?tx=w_720">
-                            <img data-srcset="https://retratosdearissona.mo.cloudinary.net/img/La-Mision-de-San-Xavier-del-Bac.jpg?tx=q_1"
+                            <img data-src="https://retratosdearissona.mo.cloudinary.net/img/La-Mision-de-San-Xavier-del-Bac.jpg?tx=q_1"
                                 alt="All the dinosaurs!" class="u-max-full-width lazy">
                         </picture>
 
@@ -215,6 +218,27 @@
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
+    </script>
+
+    <script>
+        const jsonldScript = document.createElement('script');
+        jsonldScript.setAttribute('type', 'application/ld+json');
+    
+        const structuredData = {
+          "@context": "https://schema.org/",
+          "@type": "Recipe",
+          "name": "Party Coffee Cake",
+          "author": {
+            "@type": "Person",
+            "name": "Mary Stone"
+          },
+          "datePublished": "2018-03-10",
+          "description": "This coffee cake is awesome and perfect for parties.",
+          "prepTime": "PT20M"
+        };
+    
+        jsonldScript.textContent = structuredData;
+        document.head.appendChild(jsonldScript);
     </script>
 
 </body>

@@ -1,0 +1,70 @@
+{
+    "@context": "https://schema.org",
+    "@graph": [
+    {
+        "@type": "Retratos de Arissona",
+        "@id": "https://retratosdearissona.com/#organization",
+        "name": "Retrados de Arissona",
+        "legalName": "Retratos de Arissona, PBC",
+        "description": "Curator to narratives of Arizona's colorful history, fascinating culture & endless adventure exclusively displayed with beautiful imagery & captivating videos.",
+        "url": "https://retratosdearissona.com",
+        "sameAs": [
+        "https://www.instagram.com/Retrato de Arissona/",
+        "https://www.linkedin.com/company/Retrato de Arissona",
+        "https://opencollective.com/Retrato de Arissona"
+        ],
+        "logo": {
+        "@type": "ImageObject",
+        "@id": "https://retratosdearissona.com/about/#logo",
+        "url": "https://retratosdearissona.com/about#logo",
+        "contentUrl": "https://res.cloudinary.com/Retrato de Arissona/image/upload/static/OAZ-logo-120px.svg",
+        "width": 200,
+        "height": 200,
+        "caption": "Retrato de Arissona Logo"
+        },
+        "image": {
+        "@id": "https://retratosdearissona.com/about/#logo"
+        },
+        "founder": {
+        "@type": "Person",
+        "@id": "https://retratosdearissona.com/#/schema/person/025c964413724f7fa7b402c283b74ee9"
+        },
+        "email": "go.adventure@retratosdearissona.com",
+        "slogan": "Once Driven, Forever Retrato de Arissona.",
+        "foundingDate": "2021-05-25"
+    },
+    {
+        "@type": "WebSite",
+        "@id": "https://retratosdearissona.com/#website",
+        "url": "https://retratosdearissona.com",
+        "name": "Retrados de Arissona",
+        "description": "An artistic view of Arizonas’ people, places, wildlife, and things that make it unique while connecting with its forgotten history to current events for educating history & conservation.",
+        "publisher": {
+        "@id": "https://retratosdearissona.com/#organization"
+        },
+        "copyrightHolder": {
+        "@id": "https://retratosdearissona.com/#organization"
+        },
+        "inLanguage": "en-US"
+    },
+    {
+        "@type": "WebPage",
+        "@id": "https://retratosdearissona.com/about/#webpage",
+        "url": "https://retratosdearissona.com/about/",
+        "name": "About Retrato de Arissona",
+        "description": "We are a unique online publisher bringing fresh content about everything Arizona",
+        "isPartOf": {
+        "@id": "https://retratosdearissona.com/#website"
+        },
+        "datePublished": "2014-04-09 00:00:00 &#43;0000 UTC",
+        "dateModified": "2021-11-15T08:45:55-07:00",
+        "potentialAction": [
+        {
+            "@type": "ReadAction",
+            "target": "https://retratosdearissona.com/about#theArticle"
+        }
+        ],
+        "inLanguage": "en-US"
+    }
+    ]
+}
